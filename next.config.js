@@ -1,13 +1,14 @@
 const withNextIntl = require('next-intl/plugin')()
 
+// For project sites on GitHub Pages, we need to serve the app under `/<repo-name>`.
+// Use env var to inject the base path during CI while keeping local dev unaffected.
+const repoBasePath = process.env.NEXT_PUBLIC_BASE_PATH || ""
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable static export for deployment to static hosts (e.g., GitHub Pages)
   output: "export",
-  // Optional but recommended for static hosting with folder-based routing
   trailingSlash: true,
   images: {
-    // Disable on-the-fly image optimization for static export
     unoptimized: true,
     remotePatterns: [
       {
@@ -17,6 +18,9 @@ const nextConfig = {
       },
     ],
   },
+  ...(repoBasePath
+    ? { basePath: repoBasePath, assetPrefix: repoBasePath + "/" }
+    : {}),
 }
 
 module.exports = withNextIntl(nextConfig)
