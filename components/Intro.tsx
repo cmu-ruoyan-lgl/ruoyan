@@ -65,7 +65,7 @@ export default function Intro() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             whileHover={{ scale: 1.25, rotate: 15 }}
-            className="absolute text-4xl bottom-0 right-0 hover:rotate-2"
+            className="absolute text-3xl bottom-0 right-0 hover:rotate-2"
             transition={{
               type: "spring",
               duration: 0.7,
@@ -91,7 +91,7 @@ export default function Intro() {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-center text-4xl font-bold tracking-tight  sm:text-5xl">
+          <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl">
             {t("name")}
           </h1>
 
@@ -101,7 +101,7 @@ export default function Intro() {
             </span>
             <h2
               id="name"
-              className=" text-center  text-2xl  sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold"
+              className="text-center text-3xl sm:text-4xl md:text-5xl lg:leading-normal font-extrabold"
             >
               {isMounted ? (
                 <TypeAnimation
@@ -168,7 +168,8 @@ export default function Intro() {
           <HiDownload />
         </Link>
         <a
-          className="bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          aria-label="LinkedIn"
+          className="bg-white p-2.5 text-[1.2rem] text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/joy-yujiepeng/"
           target="_blank"
         >
@@ -176,7 +177,8 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          aria-label="GitHub"
+          className="bg-white p-2.5 text-gray-700 flex items-center gap-2 text-[1.2rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/Codefreyy"
           target="_blank"
         >
