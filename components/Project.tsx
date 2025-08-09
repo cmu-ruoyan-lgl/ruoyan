@@ -44,7 +44,7 @@ export default function Project({
           <div className="flex flex-col gap-3 items-start ">
             <h3 className="text-2xl font-semibold group-hover:text-pink dark:group-hover:text-yellow hover:underline">
               <Link href={demoUrl} target="_blank">
-                {activeLocale === "zh" ? title_zh : title}
+                {activeLocale === "zh" || activeLocale === "cn" ? title_zh : title}
               </Link>
             </h3>
 
@@ -55,7 +55,7 @@ export default function Project({
                 target="_blank"
                 className="w-full flex items-center gap-1  hover:underline underline-offset-2"
               >
-                <span className="break-keep">Code</span>
+                <span className="break-keep">{activeLocale === "en" ? "Code" : "源码"}</span>
 
                 <FaGithubSquare className="w-5 h-5" />
               </Link>
@@ -65,7 +65,7 @@ export default function Project({
                   target="_blank"
                   className=" w-full flex items-center gap-1 hover:underline underline-offset-2"
                 >
-                  <span className="break-keep min-w-[4.5rem]">Live demo</span>
+                  <span className="break-keep min-w-[4.5rem]">{activeLocale === "en" ? "Live demo" : "在线预览"}</span>
                   <FiExternalLink className="w-5 h-5 " />
                 </Link>
               )}
@@ -73,7 +73,7 @@ export default function Project({
           </div>
 
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {activeLocale === "zh" ? desc_zh : description}
+            {activeLocale === "zh" || activeLocale === "cn" ? desc_zh : description}
           </p>
           <ul className="flex flex-wrap mt-auto gap-2">
             {tags.map((tag, index) => (

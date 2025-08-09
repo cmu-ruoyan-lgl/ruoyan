@@ -22,7 +22,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>{sectionLan("about")}</SectionHeading>
-      {activeLocale == "zh" ? (
+      {activeLocale === "zh" || activeLocale === "cn" ? (
         // <p>{t("desc")}</p> //这样一段话没法分段
         <div className="flex flex-col gap-2">
           <div>我是一个热爱学习、思考且富有韧性的人。</div>

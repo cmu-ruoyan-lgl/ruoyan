@@ -53,5 +53,5 @@ export default function RootLayout({
 }
 
 export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "zh" }]
+  return [{ locale: "en" }, { locale: "zh" }, { locale: "cn" }]
 }

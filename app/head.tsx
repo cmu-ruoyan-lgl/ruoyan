@@ -1,9 +1,12 @@
+import { getBasePath } from "@/lib/basePath"
+
 export default function Head() {
-  // Static meta refresh to ensure GitHub Pages root redirects to /cn/
+  const base = getBasePath()
+  // 让 GitHub Pages 根路径在静态环境下重定向到 /cn/
   return (
     <>
-      <meta httpEquiv="refresh" content="0; url=/cn/" />
-      <link rel="canonical" href="/cn/" />
+      <meta httpEquiv="refresh" content={`0; url=${base}/cn/`} />
+      <link rel="canonical" href={`${base}/cn/`} />
     </>
   )
 }
