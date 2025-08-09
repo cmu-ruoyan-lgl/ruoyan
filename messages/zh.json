@@ -1,10 +1,13 @@
 {
     "IntroSection": {
         "hello_im": "你好，我是",
-        "name": "彭郁洁",
+        "name": "刘格磊",
         "short_intro": "我享受搭建项目的乐趣！",
         "download_cv": "下载简历",
-        "blog": "个人博客"
+        "blog": "个人博客",
+        "im_a": "我是",
+        "role_frontend": "前端开发",
+        "role_fullstack": "全栈开发"
     },
     "SectionName": {
         "about": "",

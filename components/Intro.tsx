@@ -9,13 +9,18 @@ import Link from "next/link"
 import { Source_Code_Pro } from "next/font/google"
 import { useLocale } from "next-intl"
 import { useSectionInView } from "@/lib/hooks"
-import { TypeAnimation } from "react-type-animation"
+import dynamic from "next/dynamic"
 import { useActiveSectionContext } from "@/context/action-section-context"
 import { useTranslations } from "next-intl"
 import useSound from "use-sound"
 import { getBasePath } from "@/lib/basePath"
 
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"], weight: "400" })
+
+const TypeAnimation = dynamic(
+  () => import("react-type-animation").then((m) => m.TypeAnimation),
+  { ssr: false }
+)
 
 export default function Intro() {
   const { ref } = useSectionInView("Home")
@@ -86,10 +91,8 @@ export default function Intro() {
           </h1>
 
           <div className="text-center">
-            <span
-              className={`${sourceCodePro.className} text-sm tracking-wider`}
-            >
-              {activeLocale === "zh" || activeLocale === "cn" ? "我是" : "I\'m a"}{" "}
+            <span className={`${sourceCodePro.className} text-sm tracking-wider`}>
+              {t("im_a")} 
             </span>
             <h2
               id="name"
@@ -97,9 +100,9 @@ export default function Intro() {
             >
               <TypeAnimation
                 sequence={[
-                  activeLocale === "zh" || activeLocale === "cn" ? "前端开发" : "Frontend Developer",
+                  t("role_frontend"),
                   1000,
-                  activeLocale === "zh" || activeLocale === "cn" ? "全栈开发" : "Full Stack Developer",
+                  t("role_fullstack"),
                   1000,
                 ]}
                 wrapper="span"

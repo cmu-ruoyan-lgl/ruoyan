@@ -3,8 +3,11 @@
         "hello_im": "Hi, my name is",
         "name": "Joy Peng",
         "short_intro": "I enjoy building things for the web.",
-        "download_cv": "Download CV",
-        "blog": "Blog"
+    "download_cv": "Download CV",
+    "blog": "Blog",
+    "im_a": "I'm a",
+    "role_frontend": "Frontend Developer",
+    "role_fullstack": "Full Stack Developer"
     },
     "SectionName": {
         "about": "About me",
