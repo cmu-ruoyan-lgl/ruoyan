@@ -27,7 +27,7 @@ export default function About() {
         <div className="flex flex-col gap-2">
           <div>我是一个工作生活上十分可靠的人，一个痴迷于概率与博弈的人，一个热爱数学、算法和编程的人。</div>
           <div>
-            我对"可靠"的定义是：如果我答应了你的事情，你就可以放心的把它从TodoList上面划去。
+            我对&ldquo;可靠&rdquo;的定义是：如果我答应了你的事情，你就可以放心的把它从TodoList上面划去。
           </div>
           <div>
             对数学的思想大概是从小就有的，后来高中接触到了信息学竞赛，沉迷做算法题一发不可收拾，即便是现在也经常会去打Leetcode周赛，大学自然学了软件工程，因为痴迷游戏，毕业后又去当时的微信小游戏榜一《咸鱼之王》做了游戏开发。
@@ -48,11 +48,11 @@ export default function About() {
       ) : (
         <>
           <p className="mb-3">
-            I am a person who is very reliable in both work and life, someone who is obsessed with probability and game theory, and someone who loves mathematics, algorithms, and programming. My definition of 'reliable' is: if I promise you something, you can safely cross it off your TodoList.
+            I am a person who is very reliable in both work and life, someone who is obsessed with probability and game theory, and someone who loves mathematics, algorithms, and programming. My definition of &apos;reliable&apos; is: if I promise you something, you can safely cross it off your TodoList.
           </p>
 
           <p className="mb-3">
-            My interest in mathematics has been there since childhood, and later in high school I was exposed to informatics competitions, becoming addicted to solving algorithmic problems. Even now I often participate in Leetcode weekly contests. Naturally, I studied software engineering in university, and because I was obsessed with games, after graduation I went to work on game development for the then-top WeChat mini-game 'Idle Fish King'.
+            My interest in mathematics has been there since childhood, and later in high school I was exposed to informatics competitions, becoming addicted to solving algorithmic problems. Even now I often participate in Leetcode weekly contests. Naturally, I studied software engineering in university, and because I was obsessed with games, after graduation I went to work on game development for the then-top WeChat mini-game &apos;Idle Fish King&apos;.
           </p>
 
           <p className="mb-3">
@@ -60,11 +60,11 @@ export default function About() {
           </p>
 
           <p className="mb-3">
-            In the blink of an eye, I've been struggling in the web3 circle for a year and a half, during which I witnessed the 419 night, saw Bitcoin rise from 40,000 to 130,000, during which I also played with runestones, rushed into meme coins, did airdrops, learned Solidity and Rust and some development tools, participated in many hackathons and won quite a few awards, trying to create things in this circle that could truly generate stable returns: Twitter KOL copy trading bots, quantitative trading strategies for secondary markets, attempted TON blockchain game tutorial entrepreneurship, MEV bots, but unfortunately none succeeded due to various reasons.
+            In the blink of an eye, I&apos;ve been struggling in the web3 circle for a year and a half, during which I witnessed the 419 night, saw Bitcoin rise from 40,000 to 130,000, during which I also played with runestones, rushed into meme coins, did airdrops, learned Solidity and Rust and some development tools, participated in many hackathons and won quite a few awards, trying to create things in this circle that could truly generate stable returns: Twitter KOL copy trading bots, quantitative trading strategies for secondary markets, attempted TON blockchain game tutorial entrepreneurship, MEV bots, but unfortunately none succeeded due to various reasons.
           </p>
 
           <p>
-            In 2024, I met Brother Sao, who has been in the circle for a long time and is also someone with faith in decentralization, and happens to be an alumnus from my dream university CMU. During casual conversation, I learned he was working on an AI-based quantitative strategy workflow, a visual strategy generation tool that allows people who don't understand code to generate trading strategies. I was certain this was a very promising project, so I joined as a part-time developer. It's still in development, but has already received high praise and awards at many hackathons. Currently, I am preparing for web3 job hunting, wanting to enter web3 project teams for deep learning, hoping to get a job with growth potential.
+            In 2024, I met Brother Sao, who has been in the circle for a long time and is also someone with faith in decentralization, and happens to be an alumnus from my dream university CMU. During casual conversation, I learned he was working on an AI-based quantitative strategy workflow, a visual strategy generation tool that allows people who don&apos;t understand code to generate trading strategies. I was certain this was a very promising project, so I joined as a part-time developer. It&apos;s still in development, but has already received high praise and awards at many hackathons. Currently, I am preparing for web3 job hunting, wanting to enter web3 project teams for deep learning, hoping to get a job with growth potential.
           </p>
         </>
       )}
