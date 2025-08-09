@@ -127,11 +127,11 @@ export default function Intro() {
         {activeLocale === "en" ? (
           <p>
             My focus is{" "}
-            <span className="italic font-bold">React (Next.js)</span>.
+            <span className="italic font-bold">React (Next.js) && Solidity</span>.
           </p>
         ) : (
           <p>
-            我专注于 <span className="italic font-bold">React（Next.js）</span>
+            我专注于 <span className="italic font-bold">React（Next.js） && Solidity</span>
           </p>
         )}
       </motion.div>
