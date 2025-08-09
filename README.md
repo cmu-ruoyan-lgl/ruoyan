@@ -13,3 +13,74 @@ Welcome to my portfolio project! This repository features my personal portfolio 
 
 ## Contributions
 Contributions are welcome! Fork the repository and submit a pull request.
+
+## Local Development
+
+Follow these steps to run the project locally on your machine.
+
+### Prerequisites
+- Node.js 18+ (recommend using nvm)
+- pnpm or npm or yarn (any one is fine)
+
+### 1) Install dependencies
+Using pnpm:
+
+```bash
+pnpm install
+```
+
+Or using npm:
+
+```bash
+npm install
+```
+
+Or using yarn:
+
+```bash
+yarn
+```
+
+### 2) Start the development server
+
+```bash
+pnpm dev
+```
+
+Or:
+
+```bash
+npm run dev
+```
+
+Or:
+
+```bash
+yarn dev
+```
+
+The app will be available at `http://localhost:3000`.
+
+### 3) Build and preview production
+
+Build:
+
+```bash
+pnpm build
+```
+
+Preview production build:
+
+```bash
+pnpm start
+```
+
+### 4) Lint
+
+```bash
+pnpm lint
+```
+
+### Notes
+- This project uses Next.js 14 and `next-intl` for i18n.
+- Some UI effects (e.g., typing animation) are client-only; server-rendered fallback text is provided to avoid hydration mismatches.

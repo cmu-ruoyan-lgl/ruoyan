@@ -12,6 +12,7 @@ import { useSectionInView } from "@/lib/hooks"
 import dynamic from "next/dynamic"
 import { useActiveSectionContext } from "@/context/action-section-context"
 import { useTranslations } from "next-intl"
+import { useEffect, useState } from "react"
 import useSound from "use-sound"
 import { getBasePath } from "@/lib/basePath"
 
@@ -28,6 +29,10 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
   const t = useTranslations("IntroSection")
   const [playHover] = useSound(`${getBasePath()}/bubble.wav`, { volume: 0.5 })
+  const [isMounted, setIsMounted] = useState(false)
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   return (
     <section
@@ -98,17 +103,21 @@ export default function Intro() {
               id="name"
               className=" text-center  text-2xl  sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold"
             >
-              <TypeAnimation
-                sequence={[
-                  t("role_frontend"),
-                  1000,
-                  t("role_fullstack"),
-                  1000,
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-              />
+              {isMounted ? (
+                <TypeAnimation
+                  sequence={[
+                    t("role_frontend"),
+                    1000,
+                    t("role_fullstack"),
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                />
+              ) : (
+                <span>{t("role_frontend")}</span>
+              )}
             </h2>
           </div>
         </motion.div>
