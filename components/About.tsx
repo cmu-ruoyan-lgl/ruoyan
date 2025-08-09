@@ -48,81 +48,23 @@ export default function About() {
       ) : (
         <>
           <p className="mb-3">
-            My journey into programming kicked off during my undergrad in
-            <span className="font-medium italic">
-              {" "}
-              Digital Publishing
-            </span> at {}
-            <span className="italic underline">
-              <a
-                href="https://en.wikipedia.org/wiki/Wuhan_University"
-                target="_blank"
-              >
-                Wuhan University.
-              </a>
-            </span>{" "}
-            As a freshman, I got my feet wet with the basics of computer
-            science, databases, and Python. But what truly sparked my passion
-            was a course on semantic publishing—there, I used HTML and CSS to
-            create a webpage dedicated to my favorite figure skater,{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/Yuzuru_Hanyu"
-              target="_blank"
-              className="italic underline"
-            >
-              Yuzuru Hanyu.{" "}
-            </a>
-            This experience opened my eyes to the charm of web development———
-            <span className="font-medium italic">
-              literally, you can build anything you envision with code.
-            </span>
+            I am a person who is very reliable in both work and life, someone who is obsessed with probability and game theory, and someone who loves mathematics, algorithms, and programming. My definition of 'reliable' is: if I promise you something, you can safely cross it off your TodoList.
           </p>
 
           <p className="mb-3">
-            I sharpened my front-end development skills through internships at
-            Internships at Wuhan University&apos;s Big Data Institute and later
-            at{" "}
-            <span className="italic underline">
-              <a href="https://www.nio.com/careers" target="_blank">
-                {" "}
-                NIO Inc.
-              </a>
-            </span>{" "}
-            Working closely with developers, designers, testers, and product
-            managers, I loved the buzz of a team pulling together to make our
-            product better. And there’s nothing quite like the thrill of seeing
-            my own code being used by thousands—it’s what solidified my decision
-            to pursue a career in front-end development.
+            My interest in mathematics has been there since childhood, and later in high school I was exposed to informatics competitions, becoming addicted to solving algorithmic problems. Even now I often participate in Leetcode weekly contests. Naturally, I studied software engineering in university, and because I was obsessed with games, after graduation I went to work on game development for the then-top WeChat mini-game 'Idle Fish King'.
           </p>
 
           <p className="mb-3">
-            I’m now doing my Masters in
-            <span className="font-medium italic"> Computing and IT</span> at the{" "}
-            <span className="italic underline">
-              <a href="https://www.st-andrews.ac.uk/" target="_blank">
-                University of St Andrews.{" "}
-              </a>
-            </span>
-            I thrive on programming challenges and enjoy working with teams to
-            solve complex problems. I specialize in technologies such as
-            <span className="font-medium italic"> React, Next.js and Vue</span>,
-            and have a solid understanding of{" "}
-            <span className="font-medium italic">
-              JavaScript, TypeScript and HTML/CSS
-            </span>
-            .{" "}
+            After leaving that job, I started getting involved in web3 through some coincidences. I still remember my amazement when I first read the Bitcoin whitepaper - such a decentralized solution was truly genius, and at that moment I believed this technology would have great prospects. Later I went to the DNA Digital Nomad Community and discovered that there were many web3 practitioners in the nomad circle. I learned from the experts and gradually deepened my involvement in the web3 field, even finding a job developing games on the TON blockchain.
+          </p>
+
+          <p className="mb-3">
+            In the blink of an eye, I've been struggling in the web3 circle for a year and a half, during which I witnessed the 419 night, saw Bitcoin rise from 40,000 to 130,000, during which I also played with runestones, rushed into meme coins, did airdrops, learned Solidity and Rust and some development tools, participated in many hackathons and won quite a few awards, trying to create things in this circle that could truly generate stable returns: Twitter KOL copy trading bots, quantitative trading strategies for secondary markets, attempted TON blockchain game tutorial entrepreneurship, MEV bots, but unfortunately none succeeded due to various reasons.
           </p>
 
           <p>
-            In my spare time, I enjoy exploring new technologies and building
-            interesting projects. I also run my social media accounts on
-            platforms like Bilibili and Xiaohongshu, where I share tech tips and
-            tricks. And when I’m not at the computer, you’ll find me
-            <span className="font-medium italic">
-              {" "}
-              cooking up a storm, catching a movie, or keeping fit with regular
-              workouts.
-            </span>
+            In 2024, I met Brother Sao, who has been in the circle for a long time and is also someone with faith in decentralization, and happens to be an alumnus from my dream university CMU. During casual conversation, I learned he was working on an AI-based quantitative strategy workflow, a visual strategy generation tool that allows people who don't understand code to generate trading strategies. I was certain this was a very promising project, so I joined as a part-time developer. It's still in development, but has already received high praise and awards at many hackathons. Currently, I am preparing for web3 job hunting, wanting to enter web3 project teams for deep learning, hoping to get a job with growth potential.
           </p>
         </>
       )}
