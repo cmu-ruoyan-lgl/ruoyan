@@ -13,6 +13,7 @@ import { TypeAnimation } from "react-type-animation"
 import { useActiveSectionContext } from "@/context/action-section-context"
 import { useTranslations } from "next-intl"
 import useSound from "use-sound"
+import { getBasePath } from "@/lib/basePath"
 
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"], weight: "400" })
 
@@ -21,7 +22,7 @@ export default function Intro() {
   const activeLocale = useLocale()
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
   const t = useTranslations("IntroSection")
-  const [playHover] = useSound("/bubble.wav", { volume: 0.5 })
+  const [playHover] = useSound(`${getBasePath()}/bubble.wav`, { volume: 0.5 })
 
   return (
     <section
@@ -37,7 +38,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="/profile.png"
+              src={`${getBasePath()}/profile.png`}
               alt="developer-image"
               width="250"
               height="250"
@@ -142,8 +143,8 @@ export default function Intro() {
           className="bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href={
             activeLocale == "en"
-              ? "/joy-fullstack-resume.pdf"
-              : "/前端开发-彭郁洁.pdf"
+              ? `${getBasePath()}/joy-fullstack-resume.pdf`
+              : `${getBasePath()}/前端开发-彭郁洁.pdf`
           }
           locale={false}
         >
