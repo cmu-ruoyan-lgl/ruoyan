@@ -9,12 +9,12 @@ export default function RootRedirectPage() {
 
   useEffect(() => {
     const base = getBasePath()
-    router.replace(`${base}/en`)
+    router.replace(`${base}/cn`)
   }, [router])
 
   return (
     <main className="p-6">
-      <a href={`${getBasePath()}/en`}>Continue to English</a>
+      <a href={`${getBasePath()}/cn`}>前往中文</a>
     </main>
   )
 }

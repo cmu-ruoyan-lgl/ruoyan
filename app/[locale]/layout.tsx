@@ -23,7 +23,7 @@ export default function RootLayout({
   params: { locale: string }
 }) {
   unstable_setRequestLocale(locale)
-  const messages = locale === "zh" ? zhMessages : enMessages
+  const messages = locale === "zh" || locale === "cn" ? zhMessages : enMessages
   // const pathname = usePathname()
   // const isProjectDetail = pathname.includes("projects")
   return (
