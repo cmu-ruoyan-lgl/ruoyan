@@ -37,7 +37,7 @@ export default function Intro() {
   return (
     <section
       ref={ref}
-      className="mb-10 max-w-[50rem] text-center sm:mb-0 scroll-mt-28 pt-[7rem]"
+      className="mb-10 max-w-[50rem] text-center sm:mb-0 scroll-mt-28 pt-[7rem] mx-auto"
       id="home"
     >
       <div className="flex items-center justify-center">
@@ -77,8 +77,8 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      <motion.div
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl w-full flex flex-col items-center text-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -132,7 +132,7 @@ export default function Intro() {
             我专注于 <span className="italic font-bold">React（Next.js）</span>
           </p>
         )}
-      </motion.h1>
+      </motion.div>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center  gap-3 px-4 text-lg font-medium"
