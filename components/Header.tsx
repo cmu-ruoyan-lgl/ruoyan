@@ -43,7 +43,7 @@ function Header() {
                   setTimeOfLastClick(Date.now())
                 }}
               >
-                {activeLocale === "zh"
+                {activeLocale === "zh" || activeLocale === "cn"
                   ? headerLanguageMap[link.name]
                   : link.name}
                 {link.name === activeSection && (

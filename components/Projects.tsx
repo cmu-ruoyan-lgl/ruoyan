@@ -17,7 +17,7 @@ export default function Projects() {
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>
         {" "}
-        {activeLocale === "zh"
+        {activeLocale === "zh" || activeLocale === "cn"
           ? headerLanguageMap["Projects"]
           : "Featured Projects"}
       </SectionHeading>
@@ -33,7 +33,7 @@ export default function Projects() {
         target="_blank"
         href="https://github.com/Codefreyy?tab=repositories"
       >
-        View All Projects
+        {activeLocale === "zh" || activeLocale === "cn" ? "查看所有项目" : "View All Projects"}
         <FaAngleRight className="group-hover:translate-x-2 transition" />
       </Link>
     </section>

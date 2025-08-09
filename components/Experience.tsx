@@ -47,14 +47,16 @@ export default function Experience() {
   }, [])
 
   const experienceDataShown =
-    activeLocale == "zh" ? experiencesDataZn : experiencesData
+    activeLocale === "zh" || activeLocale === "cn"
+      ? experiencesDataZn
+      : experiencesData
 
   return (
     <section className="sm:mb-40 relative mb-20">
       <ExperienceLabel />
       <SectionHeading>
         {" "}
-        {activeLocale === "zh"
+        {activeLocale === "zh" || activeLocale === "cn"
           ? headerLanguageMap["Experiences"]
           : "My Experiences"}
       </SectionHeading>

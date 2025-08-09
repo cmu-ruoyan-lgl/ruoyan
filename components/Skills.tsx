@@ -32,7 +32,7 @@ export default function Skills() {
     >
       <SectionHeading>
         {" "}
-        {activeLocale === "zh"
+        {activeLocale === "zh" || activeLocale === "cn"
           ? headerLanguageMap["Skills"]
           : "My Skills"}
       </SectionHeading>

@@ -89,7 +89,7 @@ export default function Intro() {
             <span
               className={`${sourceCodePro.className} text-sm tracking-wider`}
             >
-              I&apos;m a{" "}
+              {activeLocale === "zh" || activeLocale === "cn" ? "我是" : "I\'m a"}{" "}
             </span>
             <h2
               id="name"
@@ -97,9 +97,9 @@ export default function Intro() {
             >
               <TypeAnimation
                 sequence={[
-                  "Frontend Developer",
+                  activeLocale === "zh" || activeLocale === "cn" ? "前端开发" : "Frontend Developer",
                   1000,
-                  "Full Stack Developer",
+                  activeLocale === "zh" || activeLocale === "cn" ? "全栈开发" : "Full Stack Developer",
                   1000,
                 ]}
                 wrapper="span"
@@ -110,10 +110,14 @@ export default function Intro() {
           </div>
         </motion.div>
         <p>{t("short_intro")}</p>
-        {activeLocale === "en" && (
+        {activeLocale === "en" ? (
           <p>
             My focus is{" "}
             <span className="italic font-bold">React (Next.js)</span>.
+          </p>
+        ) : (
+          <p>
+            我专注于 <span className="italic font-bold">React（Next.js）</span>
           </p>
         )}
       </motion.h1>

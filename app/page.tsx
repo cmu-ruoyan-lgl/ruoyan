@@ -1,22 +1,7 @@
 "use client"
 
-import { useEffect } from "react"
-import { useRouter } from "next/navigation"
-import { getBasePath } from "@/lib/basePath"
-
 export default function RootRedirectPage() {
-  const router = useRouter()
-
-  useEffect(() => {
-    const base = getBasePath()
-    router.replace(`${base}/cn`)
-  }, [router])
-
-  return (
-    <main className="p-6">
-      <a href={`${getBasePath()}/cn`}>前往中文</a>
-    </main>
-  )
+  return null
 }
 
 
