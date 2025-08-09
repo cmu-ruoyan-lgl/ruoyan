@@ -7,8 +7,8 @@ import Experience from "@/components/Experience"
 // import Contact from "@/components/Contact"
 
 export const metadata = {
-  title: "Joy | Personal Portfolio",
-  description: "Joy is a full-stack developer with 2 years of experience.",
+  title: "RuoYan‘s house",
+  description: "Welcome to RuoYan's house",
 }
 
 export const dynamic = "force-static"
