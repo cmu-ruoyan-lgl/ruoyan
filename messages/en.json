@@ -1,14 +1,14 @@
 {
     "IntroSection": {
         "hello_im": "Hi, my name is",
-        "name": "Joy Peng",
-        "short_intro": "I enjoy building things for the web.",
-    "download_cv": "Download CV",
-    "blog": "Blog",
-    "im_a": "I'm a",
-    "role_frontend": "Frontend Developer",
-    "role_game_engineer": "Game Developer",
-    "role_solidity_engineer": "Blockchain Developer"
+        "name": "Ruo Yan",
+        "short_intro": "I enjoy thinking about algorithms and building projects.",
+        "download_cv": "Download CV",
+        "blog": "Blog",
+        "im_a": "I'm a",
+        "role_frontend": "Frontend Developer",
+        "role_game_engineer": "Game Developer",
+        "role_solidity_engineer": "Blockchain Developer"
     },
     "SectionName": {
         "about": "About me",
