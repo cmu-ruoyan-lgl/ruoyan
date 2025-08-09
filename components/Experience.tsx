@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -17,7 +17,8 @@ import { useTheme } from "@/context/theme-context"
 import { ExperienceLabel } from "./ExperienceLabel"
 import { useLocale } from "next-intl"
 
-export default function Experience({ isMobile }: { isMobile: boolean }) {
+export default function Experience() {
+  const [isMobile, setIsMobile] = useState(false)
   const { theme } = useTheme()
   const variants = {
     left: {
@@ -31,6 +32,19 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
   }
 
   const activeLocale = useLocale()
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+    const mediaQuery = window.matchMedia("(max-width: 640px)")
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsMobile(e.matches)
+    }
+    // Set initial state
+    setIsMobile(mediaQuery.matches)
+    // Listen for changes
+    mediaQuery.addEventListener("change", handleChange)
+    return () => mediaQuery.removeEventListener("change", handleChange)
+  }, [])
 
   const experienceDataShown =
     activeLocale == "zh" ? experiencesDataZn : experiencesData

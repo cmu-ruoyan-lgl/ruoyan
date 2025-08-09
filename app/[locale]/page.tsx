@@ -4,7 +4,6 @@ import About from "@/components/About"
 import Projects from "@/components/Projects"
 import Skills from "@/components/Skills"
 import Experience from "@/components/Experience"
-import { isMobileDevice } from "@/lib/utils"
 // import Contact from "@/components/Contact"
 
 export const metadata = {
@@ -12,9 +11,10 @@ export const metadata = {
   description: "Joy is a full-stack developer with 2 years of experience.",
 }
 
-export default function Home() {
-  const isMobile = isMobileDevice()
+export const dynamic = "force-static"
+export const revalidate = false
 
+export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center px-4 overflow-x-hidden">
       <Intro />
@@ -22,8 +22,12 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
-      <Experience isMobile={isMobile} />
+      <Experience />
       {/* <Contact /> */}
     </main>
   )
+}
+
+export function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "zh" }]
 }
