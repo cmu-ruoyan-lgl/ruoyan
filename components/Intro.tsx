@@ -91,7 +91,7 @@ export default function Intro() {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center w-full"
         >
-          <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl">
+          <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl mt-[3px]">
             {t("name")}
           </h1>
 
