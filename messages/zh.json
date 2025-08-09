@@ -6,8 +6,9 @@
         "download_cv": "下载简历",
         "blog": "个人博客",
         "im_a": "我是",
-        "role_frontend": "前端开发",
-        "role_fullstack": "全栈开发"
+        "role_frontend": "前端开发工程师",
+        "role_game_engineer": "游戏开发工程师",
+        "role_solidity_engineer": "区块链开发工程师"
     },
     "SectionName": {
         "about": "",

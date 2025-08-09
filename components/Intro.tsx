@@ -108,7 +108,9 @@ export default function Intro() {
                   sequence={[
                     t("role_frontend"),
                     1000,
-                    t("role_fullstack"),
+                    t("role_game_engineer"),
+                    1000,
+                    t("role_solidity_engineer"),
                     1000,
                   ]}
                   wrapper="span"

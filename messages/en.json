@@ -7,7 +7,8 @@
     "blog": "Blog",
     "im_a": "I'm a",
     "role_frontend": "Frontend Developer",
-    "role_fullstack": "Full Stack Developer"
+    "role_game_engineer": "Game Developer",
+    "role_solidity_engineer": "Blockchain Developer"
     },
     "SectionName": {
         "about": "About me",
