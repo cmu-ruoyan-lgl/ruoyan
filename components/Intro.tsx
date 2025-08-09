@@ -82,7 +82,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className={`${sourceCodePro.className} text-lg sm:text-xl md:text-2xl tracking-wider`}>
+        <span className={`${sourceCodePro.className} text-base sm:text-lg md:text-xl tracking-wider`}>
           {t("hello_im")}
         </span>
         <motion.div
