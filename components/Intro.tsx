@@ -48,7 +48,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src={`${getBasePath()}/profile.png`}
+              src={`${getBasePath()}/head.jpg`}
               alt="developer-image"
               width="250"
               height="250"
