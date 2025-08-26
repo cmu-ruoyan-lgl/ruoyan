@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
+import { FaGlobe, FaReact, FaUnity } from "react-icons/fa";
 import { FaVuejs } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import knowledgeSharingPlatformImage from '@/public/knowledge-sharing-platform.png';
@@ -46,75 +46,63 @@ export const headerLanguageMap = {
 
 export const experiencesData = [
     {
-        title: "MSc in Computing and IT",
-        location: "University of St Andrews, UK",
-        description:
-            "Achieved a Master's degree in Computing and IT, acquiring in-depth knowledge in areas such as Human Computer Interaction, Computer Communication Systems, and Information Security. Developed strong capabilities in computational thinking, user-centred design, and data visualisation, preparing for effective application in technology-driven environments",
-        icon: React.createElement(LuGraduationCap),
-        date: "2023 Sep - 2024 May",
+        title: "Web3 Digital Nomad",
+        location: "Anji/Dali/Tibet/Hangzhou",
+        description: "Spent a year and a half learning and practicing in the Web3 field, including playing with runestones, chasing meme coins, doing airdrops, learning Solidity and Rust, participating in ETH hackathons and winning awards, building Twitter KOL auto-following projects, developing quantitative trading strategies for secondary markets, attempting TON chain gaming tutorial entrepreneurship, and recently working with the TradingFlow project team, hoping to find sustainable passive income opportunities in Web3.",
+        icon: React.createElement(FaGlobe),
+        date: "Feb 2024 - Aug 2025",
     },
     {
-        title: "Frontend Intern",
-        location: React.createElement("span", {},
-            React.createElement("a", {
-                href: "https://www.nio.com/",
-                style: { textDecoration: 'underline' },
-                target: "_blank"
-            }, "NIO Inc."),
-            " Wuhan, China"
-        ),
-        description:
-            "Developed NIO's third-generation station list and detail pages using Vue3, TypeScript, and Baidu Maps API. Implemented role-based access control for the Task Wizard page, enhancing system security. Collaborated effectively within a Jira-managed environment, utilizing Jenkins for deployment processes.",
-        icon: React.createElement(FaVuejs),
-        date: "2022 Aug - 2022 Dec",
+        title: "Game Client Cocos-Creator Developer",
+        location: "Beijing Haoteng Chuangxiang Technology Co., Ltd.",
+        description: "Responsible for the development and maintenance of 'King of Salted Fish' for Japanese/Korean/Asian/American servers; implemented IAA monetization features, increasing game revenue by 25%; developed user-customizable avatar system and chat reporting functionality.",
+        icon: React.createElement(FaUnity),
+        date: "Apr 2023 - Nov 2023",
     },
     {
-        title: "Frontend Assistant",
-        location: "Wuhan University | Wuhan, China",
-        description:
-            "Developed and maintained Finknow, a Financial Knowledge Graph Query and Analysis Platform using umi (React framework) and Ant Design Pro. Utilized graphin, a React toolkit for graph analysis based on G6, to develop an Equity Network Penetration Graph, enhancing data visualization capabilities.",
+        title: "Game Client Cocos-2D Developer",
+        location: "Beijing Bole Technology Co., Ltd.",
+        description: "Maintained the SEA region client for the company's game 'Da Fu Entertainment City', developed using Cocos-2D-X engine and Lua programming language for game logic.",
         icon: React.createElement(FaReact),
-        date: "2022 May - 2022 July",
+        date: "May 2022 - Nov 2022",
     },
     {
-        title: "BA in Digital Publishing",
-        location: "Wuhan University, China",
-        description:
-            "Graduated with a Bachelor of Arts in Digital Publishing, securing a GPA of 3.81/4.0. Gained foundational knowledge in digital media and publishing technologies.",
+        title: "Bachelor's Degree in Software Engineering",
+        location: "Qingdao University",
+        description: "Graduated early with a 3.8/4.0 GPA, recognized as an outstanding graduate of the year, and received job opportunities from preferred large companies.",
         icon: React.createElement(LuGraduationCap),
-        date: "2019 Sep - 2023 Jun",
+        date: "Sep 2019 - Jun 2022",
     },
-
 ]
 
 export const experiencesDataZn = [
     {
-        "title": "计算机与信息技术硕士",
-        "location": "英国圣安德鲁斯大学",
-        "description": "在人机交互、计算机通信系统和信息安全等领域深入学习。培养了计算思维、以用户为中心的设计和数据可视化方面的强大能力，预计以一等学位毕业（GPA17/20）。",
-        icon: React.createElement(LuGraduationCap),
-        "date": "2023年9月 - 2024年12月"
+        "title": "Web3数字游民",
+        "location": "安吉/大理/西藏/杭州",
+        "description": "在Web3领域中摸爬滚打学习实践一年半，期间打过符石，冲过土狗，做过撸毛，学过solidity和rust，打过一些eth hackthon，也获得了一些奖项，写过自动跟单Twitter_kol的项目，和二级市场的量化交易策略，尝试过ton链的链游戏教程创业，最近在TradingFlow项目组，希望找到在web3能够长久被动获益的事。",
+        icon: React.createElement(FaGlobe),
+        "date": "2024年2月 - 2025年8月"
     },
     {
-        "title": "前端实习生",
-        "location": "蔚来汽车（中国武汉）",
-        "description": `参与团队多个平台的迭代开发，独立完成内部告警平台的值班表页面开发。协助开发蔚来第三代场站列表与详情页，集成百度地图 API 实现定位与选点功能。优化任务魔棒页面，新增管理员角色，重构权限管理逻辑，用头像列表展示管理员，并整合飞书 API 实现消息发送。自定义 Element-UI 级联选择组件，解决全选德国 2000+ 城市时浏览器卡死问题，通过懒加载优化显著提升性能。遵循 Agile/Scrum 开发流程，进行两周一迭代，通过 Jira 跟进项目需求，设计技术方案，并与测试、后端、产品及 设计团队密切对接。`,
-        "icon": React.createElement(FaVuejs),
-        "date": "2022年8月 - 2022年12月"
+        "title": "游戏客户端cocos-creator开发",
+        "location": "北京豪腾创想科技有限公司",
+        "description": `负责《咸鱼之王》在日服/韩服/亚服/美服的开发与维护；实现IAA变现功能，提升游戏收入25%；开发用户自定义头像系统及聊天举报功能。`,
+        "icon": React.createElement(FaUnity),
+        "date": "2023年4月 - 2023年11月"
     },
     {
-        "title": "前端开发",
-        "location": "武汉大学大数据研究院",
-        "description": "使用umi（React框架）和Ant Design Pro开发和维护Finknow，一个金融知识图谱查询和分析平台。利用基于G6的React图分析工具包graphin开发了股权网络穿透图，增强了数据可视化功能。",
+        "title": "游戏客户端cocos-2d开发",
+        "location": "北京博乐科技有限公司",
+        "description": "维护公司游戏《大福娱乐城》客户端SEA板块，使用cocos-2d-x引擎开发，使用Lua语言开发逻辑。",
         "icon": React.createElement(FaReact),
-        "date": "2022年5月 - 2022年8月"
+        "date": "2022年5月 - 2022年11月"
     },
     {
-        "title": "数字出版学士",
-        "location": "武汉大学",
-        "description": "以3.81/4.0的GPA毕业，获得数字出版学士学位，掌握了数字媒体和出版技术的基础知识。",
+        "title": "软件工程 本科学位",
+        "location": "青岛大学",
+        "description": "以3.8/4.0的GPA提前毕业，当年的优秀毕业生，获得了喜欢大厂的工作机会。",
         "icon": React.createElement(LuGraduationCap),
-        "date": "2019年9月 - 2023年6月"
+        "date": "2019年9月 - 2022年6月"
     }
 ]
 
