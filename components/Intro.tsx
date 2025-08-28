@@ -169,32 +169,34 @@ export default function Intro() {
           {t("download_cv")}
           <HiDownload />
         </Link>
-        <a
+        {/* <a
           aria-label="LinkedIn"
           className="bg-white p-2.5 text-[1.2rem] text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/joy-yujiepeng/"
           target="_blank"
         >
           <BsLinkedin />
-        </a>
+        </a> */}
 
         <a
           aria-label="GitHub"
           className="bg-white p-2.5 text-gray-700 flex items-center gap-2 text-[1.2rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Codefreyy"
+          href="https://github.com/Cmu-ruoyan-lgl"
           target="_blank"
         >
           <FaGithubSquare />
         </a>
-        <a
+        
+        {/* <a
           className=" bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://blog-joy-peng.netlify.app"
           target="_blank"
         >
           {t("blog")}
 
-          {/* <FaGithubSquare /> */}
-        </a>
+          <FaGithubSquare />
+        </a> */}
+        
       </motion.div>
     </section>
   )
